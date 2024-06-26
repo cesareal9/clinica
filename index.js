@@ -28,21 +28,13 @@ while (true) {
             break;
         } else {
             consultas.forEach((consultas, index) => {
-                console.log(
-                    `${index + 1}. ${consultas.paciente} - ${
-                        consultas.medico
-                    } - ${consultas.data} - ${consultas.hora}`
-                );
+                console.log(`${index + 1}. ${consultas.paciente} - ${consultas.medico} - ${consultas.data} - ${consultas.hora}`);
             });
         }
     } else if (opcao === "3") {
         console.log("digite o numero da consulta a ser alterada: ");
         consultas.forEach((consultas, index) => {
-            console.log(
-                `${index + 1}. ${consultas.paciente} - ${consultas.medico} - ${
-                    consultas.data
-                } - ${consultas.hora}\n`
-            );
+            console.log(`${index + 1}. ${consultas.paciente} - ${consultas.medico} - ${consultas.data} - ${consultas.hora}\n`);
         });
         let escolha = prompt("consulta a ser modificada: ");
         consultas.pop(escolha - 1);
@@ -55,11 +47,7 @@ while (true) {
     } else if (opcao === "4") {
         console.log("digite o numero da consulta a ser alterada: ");
         consultas.forEach((consultas, index) => {
-            console.log(
-                `${index + 1}. ${consultas.paciente} - ${consultas.medico} - ${
-                    consultas.data
-                } - ${consultas.hora}\n`
-            );
+            console.log(`${index + 1}. ${consultas.paciente} - ${consultas.medico} - ${consultas.data} - ${consultas.hora}\n`);
         });
         let escolha = prompt("consulta a ser excluida: ");
         consultas.pop(escolha - 1);
